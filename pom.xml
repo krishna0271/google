@@ -9,7 +9,6 @@
 	<name>framework</name>
 	<url>http://maven.apache.org</url>
    
-   
 	<build>
 		<resources>
 			<resource>

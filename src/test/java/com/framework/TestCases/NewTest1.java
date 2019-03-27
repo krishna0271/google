@@ -12,7 +12,7 @@ public class NewTest1 extends BaseClass{
 
 GoogleHomePage homepage;
 
-@Test(priority=1)
+@Test(priority=1,groups = { "regressionTest", "functionalTest" })
 public void test_Home_Page(){
 	
 	homepage=new GoogleHomePage(driver);
@@ -24,7 +24,7 @@ public void test_Home_Page(){
 	
 }
 
-@Test(priority=2)
+@Test(priority=2,groups = { "regressionTest", "functionalTest" })
 public void test_Home_Page1() throws AWTException, InterruptedException{
 	
 	homepage=new GoogleHomePage(driver);
@@ -39,7 +39,7 @@ public void test_Home_Page1() throws AWTException, InterruptedException{
 	Thread.sleep(2000);
 }
 
-@Test(priority=3)
+@Test(priority=3,groups = { "regressionTest", "smokeTest" })
 public void test_gmail_link() {
 	
 	homepage=new GoogleHomePage(driver);
