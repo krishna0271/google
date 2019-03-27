@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [softwaretestingmaterial]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="testngTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="regressionTest"/>
+        <exclude name="smokeTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.framework.TestCases.NewTest1">
+        <methods>
+          <include name="test_Home_Page1"/>
+          <include name="test_Home_Page"/>
+        </methods>
+      </class> <!-- com.framework.TestCases.NewTest1 -->
+    </classes>
+  </test> <!-- testngTest(failed) -->
+</suite> <!-- Failed suite [softwaretestingmaterial] -->

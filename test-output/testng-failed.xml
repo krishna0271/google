@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [softwaretestingmaterial]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="testngTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="regressionTest"/>
+        <exclude name="smokeTest"/>
+      </run>
+    </groups>
     <classes>
-      <class name="practice.NewTest">
+      <class name="com.framework.TestCases.NewTest1">
         <methods>
-          <include name="f"/>
+          <include name="test_Home_Page1"/>
+          <include name="test_Home_Page"/>
         </methods>
-      </class> <!-- practice.NewTest -->
+      </class> <!-- com.framework.TestCases.NewTest1 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- testngTest(failed) -->
+</suite> <!-- Failed suite [softwaretestingmaterial] -->
